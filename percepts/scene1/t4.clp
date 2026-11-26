@@ -1,0 +1,41 @@
+(ag_percept
+	(percept_pobj ego)
+	(percept_pname isa)
+	(percept_pval vehicle)
+)
+
+(ag_percept
+	(percept_pobj ego)
+	(percept_pname speed)
+	(percept_pval 35)
+)
+
+(ag_percept
+	(percept_pobj ego)
+	(percept_pname is_electric)
+	(percept_pval no)
+)
+
+(ag_percept
+	(percept_pobj ego)
+	(percept_pname has_disability_card)
+	(percept_pval no)
+)
+
+(ag_percept
+	(percept_pobj sign1)
+	(percept_pname isa)
+	(percept_pval road_sign)
+)
+
+(ag_percept
+	(percept_pobj sign1)
+	(percept_pname has_type)
+	(percept_pval no_stopping)
+)
+
+(ag_percept
+	(percept_pobj sign1)
+	(percept_pname rel_dist)
+	(percept_pval 5)
+)

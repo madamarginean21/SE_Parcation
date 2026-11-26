@@ -1,0 +1,10 @@
+SCENARIUL 5 - locul se ocupa in timp ce masina se apropie
+   Masina proprie: neelectrica, fara card de dizabilitati.
+
+   t1-t2    drum liber                                  -> interzis (fara loc)
+   t3-t7    loc L5 liber, masina vine incet (<=10 km/h)  -> PERMIS (R1)
+   t8-t10   alta masina ocupa L5                        -> interzis (loc nepotrivit)
+   t11-t13  drum liber                                  -> interzis (fara loc)
+   t14-t16  loc L6 liber + trecere de pietoni la <25 m  -> interzis (R8)
+   t17      L6 liber, dar viteza 12 km/h                -> interzis (R14)
+   t18-t23  trecerea ramane la >25 m, L6 liber          -> PERMIS (R1, R13)

@@ -1,0 +1,11 @@
+SCENARIUL 6 - mai multe locuri deodata si interdictii succesive
+   Masina proprie: ELECTRICA si CU card de dizabilitati.
+   Locuri vazute: E3 (electrice), D3 (dizabilitati), O3 (ocupat).
+
+   t1-t2    drum liber                                  -> interzis (fara loc)
+   t3       E3, D3 libere, O3 ocupat                    -> PERMIS (R2 / R3)
+   t4-t5    pieton la <5 m                              -> interzis, asteapta (R12)
+   t6-t7    intersectie la <25 m                        -> interzis (R9)
+   t8       intersectie + pieton                        -> interzis (R9, R12)
+   t9-t11   statie de autobuz la <25 m                  -> interzis (R10)
+   t12-t24  nicio interdictie                           -> PERMIS, masina parcheaza

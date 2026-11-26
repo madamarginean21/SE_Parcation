@@ -1,0 +1,12 @@
+SCENARIUL 4 - doua zone de interdictie active in acelasi timp
+   Masina proprie: neelectrica, fara card de dizabilitati.
+
+   t1-t2    drum liber                                       -> interzis (fara loc)
+   t3       semn "Oprirea interzisa"                         -> interzis (R4)
+   t4-t6    loc L1 liber                                     -> interzis (R4)
+   t7       semn "Stationarea interzisa" (ambele zone active)-> interzis (R4, R5)
+   t8-t11   loc L2 liber                                     -> interzis (R4, R5)
+   t12      "Incetarea tuturor restrictiilor"                -> R6 + R7 in acelasi cadru
+   t13-t14  drum liber                                       -> interzis (fara loc)
+   t15-t17  loc L3 liber, dar viteza >10 km/h                -> interzis (R14)
+   t18-t22  loc L3 liber, viteza <= 10 km/h                  -> PERMIS (R1, R13)
