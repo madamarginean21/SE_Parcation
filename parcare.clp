@@ -3,10 +3,10 @@
 ;;;
 ;;;  Rulare in (Fuzzy)CLIPS:
 ;;;     (load "parcare.clp")      ; template-uri si reguli
-;;;     (load "scenariu1.clp")    ; un singur scenariu odata
+;;;     (load "Scenarios/scenariu1.clp")  ; un singur scenariu odata
 ;;;     (ruleaza)                 ; reset + run + timpul de executie
 ;;;
-;;;  Pentru alt scenariu: (clear), apoi load parcare.clp + scenariuN.clp
+;;;  Pentru alt scenariu: (clear), apoi load parcare.clp + Scenarios/scenariuN.clp
 ;;;
 ;;;  Fiecare cadru are un moment de timp t. Faptul (timp ?t) arata cadrul
 ;;;  curent; dupa ce s-a luat decizia pentru cadrul t, se trece la t+1.
