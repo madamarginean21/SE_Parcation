@@ -6,7 +6,8 @@
 ;;;     t3-t6    loc E1 liber, rezervat electrice              -> interzis (loc nepotrivit)
 ;;;     t7-t10   loc O1 nerezervat, dar ocupat                 -> interzis (loc nepotrivit)
 ;;;     t11-t14  loc D1 pentru dizabilitati + statie la <25 m  -> interzis (R10)
-;;;     t15-t22  loc D1, statia ramane la >25 m in spate       -> PERMIS (R2, R13)
+;;;     t15-t16  loc D1, statia in spate, dar viteza >10 km/h  -> interzis (R14)
+;;;     t17-t22  loc D1, viteza <= 10 km/h                     -> PERMIS (R2, R13)
 ;;; ---------------------------------------------------------------------
 
 (deffacts scenariu-2

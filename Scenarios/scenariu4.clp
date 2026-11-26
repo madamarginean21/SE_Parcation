@@ -9,7 +9,8 @@
 ;;;     t8-t11   loc L2 liber                                     -> interzis (R4, R5)
 ;;;     t12      "Incetarea tuturor restrictiilor"                -> R6 + R7 in acelasi cadru
 ;;;     t13-t14  drum liber                                       -> interzis (fara loc)
-;;;     t15-t22  loc L3 liber, nerezervat                         -> PERMIS (R1, R13)
+;;;     t15-t17  loc L3 liber, dar viteza >10 km/h                -> interzis (R14)
+;;;     t18-t22  loc L3 liber, viteza <= 10 km/h                  -> PERMIS (R1, R13)
 ;;; ---------------------------------------------------------------------
 
 (deffacts scenariu-4

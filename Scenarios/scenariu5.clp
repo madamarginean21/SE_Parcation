@@ -3,11 +3,12 @@
 ;;;     Masina proprie: neelectrica, fara card de dizabilitati.
 ;;;
 ;;;     t1-t2    drum liber                                  -> interzis (fara loc)
-;;;     t3-t7    loc L5 liber, nerezervat                    -> PERMIS (R1)
+;;;     t3-t7    loc L5 liber, masina vine incet (<=10 km/h)  -> PERMIS (R1)
 ;;;     t8-t10   alta masina ocupa L5                        -> interzis (loc nepotrivit)
 ;;;     t11-t13  drum liber                                  -> interzis (fara loc)
 ;;;     t14-t16  loc L6 liber + trecere de pietoni la <25 m  -> interzis (R8)
-;;;     t17-t23  trecerea ramane la >25 m, L6 liber          -> PERMIS (R1, R13)
+;;;     t17      L6 liber, dar viteza 12 km/h                -> interzis (R14)
+;;;     t18-t23  trecerea ramane la >25 m, L6 liber          -> PERMIS (R1, R13)
 ;;; ---------------------------------------------------------------------
 
 (deffacts scenariu-5
@@ -20,23 +21,23 @@
    (masina (t 2) (viteza 35))
 
    ;; t3-t7: loc liber - masina incetineste ca sa parcheze
-   (masina      (t 3) (viteza 30))
+   (masina      (t 3) (viteza 10))
    (loc-parcare (t 3) (id L5) (distanta 30))
-   (masina      (t 4) (viteza 25))
+   (masina      (t 4) (viteza 9))
    (loc-parcare (t 4) (id L5) (distanta 23))
-   (masina      (t 5) (viteza 20))
+   (masina      (t 5) (viteza 8))
    (loc-parcare (t 5) (id L5) (distanta 17))
-   (masina      (t 6) (viteza 18))
+   (masina      (t 6) (viteza 7))
    (loc-parcare (t 6) (id L5) (distanta 12))
-   (masina      (t 7) (viteza 15))
+   (masina      (t 7) (viteza 6))
    (loc-parcare (t 7) (id L5) (distanta 8))
 
    ;; t8-t10: alta masina intra pe L5 inainte
-   (masina      (t 8)  (viteza 12))
+   (masina      (t 8)  (viteza 5))
    (loc-parcare (t 8)  (id L5) (stare ocupat) (distanta 5))
-   (masina      (t 9)  (viteza 15))
+   (masina      (t 9)  (viteza 10))
    (loc-parcare (t 9)  (id L5) (stare ocupat) (distanta 2))
-   (masina      (t 10) (viteza 20))
+   (masina      (t 10) (viteza 15))
    (loc-parcare (t 10) (id L5) (stare ocupat) (distanta 0))
 
    ;; t11-t13: masina cauta alt loc

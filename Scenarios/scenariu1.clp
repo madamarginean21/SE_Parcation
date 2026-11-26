@@ -7,7 +7,8 @@
 ;;;     t5-t9    loc L1 liber + trecere de pietoni la <25 m  -> interzis (R4, R8)
 ;;;     t10      "Sfarsitul zonei de oprire interzisa"       -> R6, interzis (R8)
 ;;;     t11-t14  loc L3 liber + intersectie la <25 m         -> interzis (R9)
-;;;     t15-t17  loc L2 liber, nerezervat                    -> PERMIS (R1, R13)
+;;;     t15-t16  loc L2 liber, dar viteza 15, 12 km/h           -> interzis (R14)
+;;;     t17      loc L2 liber, viteza 10 km/h                   -> PERMIS (R1, R13)
 ;;;     t18-t19  pieton la 3 m                               -> interzis, asteapta (R12)
 ;;;     t20-t22  pietonul a plecat, masina opreste           -> PERMIS
 ;;; ---------------------------------------------------------------------

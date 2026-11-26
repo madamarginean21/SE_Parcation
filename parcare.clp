@@ -14,7 +14,7 @@
 ;;;  Ordinea in cadrul unui moment de timp (prin salience):
 ;;;     110  afisarea cadrului (timp, viteza)
 ;;;     100  actualizarea zonelor de interdictie (R4-R7)
-;;;      90  locuri potrivite (R1-R3) si interdictii locale (R8-R12)
+;;;      90  locuri potrivite (R1-R3) si interdictii locale (R8-R12, R14)
 ;;;      80  interdictii din zonele active (R4, R5)
 ;;;      50  decizia finala (R13)
 ;;;      40  afisarea motivelor
@@ -186,6 +186,24 @@
    (obiect (t ?t) (tip pieton) (distanta ?d&:(< ?d 5)))
    =>
    (assert (interdictie (t ?t) (motiv "R12 pieton la mai putin de 5 m - masina asteapta"))))
+
+
+;;; ---------------------------------------------------------------------
+;;;  5b. VITEZA (R14)
+;;;     Manevra de parcare incepe doar daca masina merge cu cel mult
+;;;     ?*viteza-max* km/h. Viteza vine de la vitezometru, la fiecare cadru.
+;;; ---------------------------------------------------------------------
+
+(defglobal ?*viteza-max* = 10)               ; km/h
+
+(defrule R14-viteza-prea-mare
+   (declare (salience 90))
+   (timp ?t)
+   (masina (t ?t) (viteza ?v&:(> ?v ?*viteza-max*)))
+   =>
+   (assert (interdictie (t ?t)
+      (motiv (str-cat "R14 viteza prea mare pentru parcare (" ?v
+                      " km/h > " ?*viteza-max* " km/h)")))))
 
 
 ;;; ---------------------------------------------------------------------

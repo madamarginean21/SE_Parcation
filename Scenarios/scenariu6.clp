@@ -22,7 +22,7 @@
    (masina (t 2) (viteza 25) (electrica da) (card-dizabilitati da))
 
    ;; t3: trei locuri vazute deodata
-   (masina      (t 3) (viteza 20) (electrica da) (card-dizabilitati da))
+   (masina      (t 3) (viteza 10) (electrica da) (card-dizabilitati da))
    (loc-parcare (t 3) (id E3) (rezervat electrice) (distanta 20))
    (loc-parcare (t 3) (id D3) (rezervat dizabilitati) (distanta 25))
    (loc-parcare (t 3) (id O3) (stare ocupat) (distanta 15))

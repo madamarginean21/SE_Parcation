@@ -9,7 +9,8 @@
 ;;;     t12      semn "Incetarea tuturor restrictiilor"         -> R7, interzis (fara loc)
 ;;;     t13-t15  loc D2 pentru dizabilitati (fara card)         -> interzis (loc nepotrivit)
 ;;;     t16-t18  loc E2 pentru electrice + trecere de pietoni   -> interzis (R8)
-;;;     t19-t24  loc E2, langa un loc ocupat O2                 -> PERMIS (R3, R13)
+;;;     t19      loc E2, dar viteza 12 km/h                     -> interzis (R14)
+;;;     t20-t24  loc E2, langa un loc ocupat O2                 -> PERMIS (R3, R13)
 ;;; ---------------------------------------------------------------------
 
 (deffacts scenariu-3
